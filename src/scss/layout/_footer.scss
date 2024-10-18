@@ -1,0 +1,88 @@
+
+
+.footer{
+    margin-top: 1rem;
+    .contenedor-footer{
+        background-color: rgb(24, 25, 37);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        @include telefonoS{
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+
+        @include telefonoM{
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+        @include tablet{
+            @include grid(3, 1rem);
+            align-items: baseline;
+            justify-items: center;
+        }
+
+        @include grid(3, 1rem);
+        align-items: baseline;
+        justify-items: center;
+
+        .div-propiedades {
+            display: block;
+
+            .text-propiedades{
+                color: whitesmoke;
+                font-weight: 600;
+            }
+        }
+        
+        .div-menu {
+            display: block;
+            .text-menu{
+                color: whitesmoke;
+                font-weight: 600;
+            }
+        }
+
+        a{
+            display: block;
+            color: rgb(130, 147, 168);
+            font-size: 2rem;
+
+            &:hover{
+                color: white;
+            }
+
+        }
+        h3{
+            color: rgb(130, 147, 168);
+
+        }
+
+    }
+    
+    .copyright{
+        margin-top: 4rem;
+        text-align: center;
+        color: rgb(108, 108, 108);
+        margin: 0;
+    }
+    .div-copyright{
+        background-color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

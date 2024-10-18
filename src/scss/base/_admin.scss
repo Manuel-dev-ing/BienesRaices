@@ -1,0 +1,119 @@
+.botones-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+.alerta{
+    padding: 1rem;
+    color: rgb(253, 253, 253); 
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+
+    &.error{
+        background-color: rgb(223, 0, 0);
+        text-transform: uppercase;
+        width: 53rem;
+    
+    }
+
+    &.exito{
+        background-color: green;
+    }
+
+    
+}
+.eliminado{
+    background-color: red;
+    color: white;
+    padding: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;   
+}
+
+  
+
+
+
+
+
+.btnNuevaPropiedad{
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 2;
+    &:hover{
+        cursor: pointer;
+        background-color: darken(#8d99ae, 20%);
+        color: black;
+        font-weight: 500;
+    }
+}
+
+table.propiedades{
+    margin-top: 5rem;
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+    thead{
+        background-color: rgb(219, 219, 219);
+        th{
+            padding: 0.7rem;
+        }
+    }
+
+    tbody{
+        td{
+            padding: 1rem;
+            font-weight: 400;
+            
+           
+        }
+    }
+
+    
+
+    .btnEliminar{
+        
+        color: white;
+        border: none;
+        padding: 0.8rem 2.2rem;
+        background-color: rgb(255, 19, 19);
+        font-weight: 400;
+        margin-bottom: 1rem;
+        &:hover{
+            cursor: pointer;
+            background-color: darken(red, 8%);
+            color: white;
+            font-weight: 400;
+        }
+
+    }
+
+    .btnActualizar{
+        margin-top: 0.5rem;
+        color: black;
+        border: none;
+        padding: 0.7rem 1.7rem;
+        background-color: yellow;
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+            background-color: darken(yellow, 8%);
+            color: black;
+            font-weight: 500;
+        }
+    }
+
+}
+
+.imagen-small{
+    width: 20rem;
+}

@@ -1,0 +1,277 @@
+.contenedor-main{
+    margin: 2rem;
+    max-width: 100%;
+    
+}
+
+@include telefonoS{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+            .propiedad-imagen{
+                max-width: 100%;
+                width: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+@include telefonoM{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+            .propiedad-imagen{
+                max-width: 100%;
+                width: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+    
+}
+
+@include telefonoL{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+            .propiedad-imagen{
+                max-width: 100%;
+                width: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@include telefono{
+    
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+            .propiedad-imagen{
+                max-width: 100%;
+                width: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 7rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+          }
+    }
+}
+
+@include desktop{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 7rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+        }
+        .resumen-propiedad{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       
+    }
+}
+@include desktopXL{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 7rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 100%;
+        .div-imagen{
+            display: flex;
+            justify-content: center;
+        }
+
+        .resumen-propiedad{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       
+    }
+}
+@include desktopXXL{
+    .contenido-imagen-contacto{
+        .header-text-propiedad{
+            font-size: 7rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+    }
+    .seccion-propiedad{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .resumen-propiedad{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+}
+
+.seccion-propiedad{
+
+    box-shadow: 0 0 1.5rem rgb(194, 194, 194);
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+
+    .div-imagen{
+        .propiedad-imagen{
+            width: 60rem;
+            height: 40rem;
+            object-fit: fill;
+        }
+    }
+    
+    .resumen-propiedad{
+        hr{
+            font-size: 2rem;
+        }
+        .titulo{
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .ubicacion{
+            p{
+                color: rgba(9, 30, 102, 0.938);
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+
+        .precio-resumen-propiedad{
+            margin: 0 0 0 1.5rem;
+            font-size: 3rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .caracteristicas-propiedad {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            align-items: center;
+            margin: 0;
+        
+            li {
+                display: flex;
+                margin-left: 1.5rem;
+                width: 14rem;
+                
+                img {
+                    flex: 0 0 3rem;
+                    max-width: 2.2rem;
+                }
+        
+                p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-size: 1.5rem;
+        
+                }
+        
+            }
+        
+        
+        }
+
+
+    }
+
+}
+
+.seccion-descripcion{
+    margin-top: 2rem;
+    box-shadow: 0 0 1.5rem rgb(194, 194, 194);
+    padding: 2rem;
+    .titulo-descripcion{
+        margin: 0;
+        text-align: left;
+        font-weight: 700;
+    }
+   
+
+}
+
+
+

@@ -1,0 +1,22 @@
+{
+    "name": "al150/proyecto-inmobiliaria",
+    "description": "Creando proyecto inmobiliaria",
+    "type": "project",
+    
+    "authors": [
+        {
+            "name": "Manuel Tamayo",
+            "email": "manueltamayo9765@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4":{
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    }
+}

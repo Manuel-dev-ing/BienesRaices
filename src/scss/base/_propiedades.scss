@@ -1,0 +1,252 @@
+@include telefono {
+    .seccion-propiedades {
+        display: grid;
+
+    }
+
+}
+
+@include tablet {
+    .seccion-propiedades {
+        @include grid(2, 3rem);
+
+    }
+
+
+}
+
+@include desktop {
+    .seccion-propiedades {
+        @include grid(3, 3rem);
+
+    }
+}
+
+@include desktopXL {
+    .seccion-propiedades {
+        @include grid(3, 3rem);
+
+    }
+
+}
+
+.header-imagen-propiedades{
+    position: relative;
+    max-height: 30rem;
+    min-height: 30rem;
+    overflow: hidden;
+
+    .overlay-propiedades{
+        position: absolute;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    picture, img{
+        width: 100%;
+        display: block;
+
+    }
+}
+
+.contenido-imagen-propiedades{
+    z-index: 10;
+
+    .text-propiedades{
+        display: flex;
+        color: white;
+        font-size: 7rem;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+
+.seccion-propiedades {
+
+    .propiedad {
+        box-shadow: 0 0 1.5rem rgb(194, 194, 194);
+        position: relative;
+        height: 75rem;
+        img,
+        picture {
+            width: 100%;
+            display: block;
+        }
+
+        .ver-propiedad {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            justify-content: flex-end;
+          
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+
+            .btnContacto {
+                border: none;
+                padding: .8rem 1.7rem .8rem 1.7rem;
+                font-size: 1.7rem;
+                background-color: rgb(34, 34, 34);
+                color: rgb(235, 235, 235);
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken(#8d99ae, 20%);
+                    color: black;
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+hr {
+    max-width: 96%;
+}
+
+
+.ubicacion {
+    @include telefono {
+        display: flex;
+
+    }
+
+    display: flex;
+    width: auto;
+    align-items: center;
+
+    p {
+        list-style: none;
+        margin: 1rem 0;
+        margin-left: 1.5rem;
+
+    }
+
+    img {
+        max-width: 2rem;
+        margin-left: 1rem;
+    }
+
+}
+
+.nombre-casa {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+
+}
+
+
+.caracteristicas-propiedad {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+
+    li {
+        display: flex;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+
+        img {
+            flex: 0 0 3rem;
+            max-width: 2rem;
+            margin-right: 1rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+
+        }
+
+    }
+
+
+}
+
+.precio-propiedad {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-right: 2rem;
+}
+
+@include telefono {
+    .Contacto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@include tablet {
+    .Contacto {
+        display: flex;
+    }
+}
+
+@include desktop {
+    .Contacto {
+        display: flex;
+    }
+}
+
+@include desktopXL {
+    .Contacto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.Contacto {
+    margin-bottom: 1rem;
+
+    align-items: center;
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 96%;
+
+    p {
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+    }
+
+    .btnContacto {
+        border: none;
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 2rem;
+        background-color: black;
+        color: whitesmoke;
+
+        &:hover {
+            cursor: pointer;
+            background-color: darken(#8d99ae, 20%);
+            color: black;
+            font-weight: 500;
+        }
+
+    }
+
+}
