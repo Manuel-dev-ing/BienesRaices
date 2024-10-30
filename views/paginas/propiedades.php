@@ -53,6 +53,10 @@
                 <h2 class="precio-propiedad"><?php echo $propiedad->precio; ?></h2>    
             
             </div>
+            <div class="ver-propiedad">
+                <a href="/propiedad?id=<?php echo $propiedad->id; ?>" class="btnContacto">Ver Propiedad</a>
+
+            </div>
         </div>
         <?php  }  ?>    
 

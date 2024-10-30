@@ -25,11 +25,10 @@ class Router
 
         $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/index', '/vendedores/actualizar', '/vendedores/crear', '/vendedores/eliminar'];        
 
-        $urlActual = $_SERVER['PATH_INFO'] ?? '/';
+        $urlActual = strtok($_SERVER['REQUEST_URI'], '?')  ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
         
         // debuguear($urlActual);
-
 
         if ($method === 'GET') {
             $funcion = $this->rutasGET[$urlActual];

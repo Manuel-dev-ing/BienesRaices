@@ -62,12 +62,12 @@ class PaginasController
             $mail = new PHPMailer();
 
             $mail->isSMTP();
-            $mail->Host = 'sandbox.smtp.mailtrap.io';
+            $mail->Host = $_ENV['sandbox.smtp.mailtrap.io'];
             $mail->SMTPAuth = true;
-            $mail->Username = '61ea801167ca75';
-            $mail->Password = '1df9ac5a000b30';
+            $mail->Username = $_ENV['61ea801167ca75'];
+            $mail->Password = $_ENV['1df9ac5a000b30'];
             $mail->SMTPSecure = 'tls';
-            $mail->Port = 2525;
+            $mail->Port = $_ENV['2525'];
 
             $mail->setFrom('admin@bienesraices.com');
             $mail->addAddress('al15020032@itsa.edu.mx');//A quien le enviamos el email
