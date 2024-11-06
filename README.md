@@ -9,14 +9,21 @@ La Programación Orientada a Objetos (POO) es el enfoque clave en la estructura 
 
 ## Funcionalidades
 
--`Gestión de Propiedades:` Permite la creación, edición y eliminación de propiedades inmobiliarias en la plataforma. Cada propiedad incluye detalles como descripción, precio, ubicación y características relevantes, brindando a los usuarios una visión clara de cada inmueble disponible.
--`Autenticación de Usuarios:` Sistema de autenticación que garantiza la seguridad de la aplicación. Los usuarios pueden registrarse y acceder a sus cuentas mediante una combinación de email y contraseña, con almacenamiento seguro de credenciales. 
--`Gestión de Usuarios:` Administración de usuarios del sistema, permitiendo la creación, edición y eliminación de cuentas de usuario.
--`Panel de Administración:` Interfaz administrativa que facilita la gestión centralizada de propiedades y usuarios. Incluye una navegación intuitiva para acceder a diferentes secciones.
--`Visualización de Propiedades:` Cada propiedad cuenta con una página de detalles donde se muestra toda la información relevante, así como una galería de imágenes para una mejor presentación visual.
--`Automatización de Tareas:` Utilización de Gulp para automatizar la compilación de estilos SASS y optimización de recursos, mejorando el rendimiento de la aplicación y facilitando el flujo de trabajo en el desarrollo. 
--`Gestión de Vendedores:` Administración de perfiles de vendedores, permitiendo a los administradores agregar, editar y eliminar la información de los vendedores que figuran en la plataforma. Cada vendedor tiene un perfil asignado para facilitar la conexión con los posibles compradores.
--`Formulario de Contacto con Vendedores:` Los usuarios pueden contactar directamente a un vendedor a través de un formulario de contacto. Al enviar el formulario, se genera un correo electrónico que notifica al vendedor sobre el interés del cliente, facilitando el proceso de comunicación entre ambas partes.
+- `Gestión de Propiedades:` Permite la creación, edición y eliminación de propiedades inmobiliarias en la plataforma. Cada propiedad incluye detalles como descripción, precio, ubicación y características relevantes, brindando a los usuarios una visión clara de cada inmueble disponible.
+
+- `Autenticación de Usuarios:` Sistema de autenticación que garantiza la seguridad de la aplicación. Los usuarios pueden registrarse y acceder a sus cuentas mediante una combinación de email y contraseña, con almacenamiento seguro de credenciales. 
+
+- `Gestión de Usuarios:` Administración de usuarios del sistema, permitiendo la creación, edición y eliminación de cuentas de usuario.
+
+- `Panel de Administración:` Interfaz administrativa que facilita la gestión centralizada de propiedades y usuarios. Incluye una navegación intuitiva para acceder a diferentes secciones.
+
+- `Visualización de Propiedades:` Cada propiedad cuenta con una página de detalles donde se muestra toda la información relevante, así como una galería de imágenes para una mejor presentación visual.
+
+- `Automatización de Tareas:` Utilización de Gulp para automatizar la compilación de estilos SASS y optimización de recursos, mejorando el rendimiento de la aplicación y facilitando el flujo de trabajo en el desarrollo. 
+
+- `Gestión de Vendedores:` Administración de perfiles de vendedores, permitiendo a los administradores agregar, editar y eliminar la información de los vendedores que figuran en la plataforma. Cada vendedor tiene un perfil asignado para facilitar la conexión con los posibles compradores.
+
+- `Formulario de Contacto con Vendedores:` Los usuarios pueden contactar directamente a un vendedor a través de un formulario de contacto. Al enviar el formulario, se genera un correo electrónico que notifica al vendedor sobre el interés del cliente, facilitando el proceso de comunicación entre ambas partes.
 
 ## Instalación
 Para iniciar con el proyecto bienesRaíces, existen dos métodos principales de instalación que puedes seguir según tu preferencia.
